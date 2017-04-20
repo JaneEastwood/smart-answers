@@ -1,10 +1,17 @@
+Who has British nationality?
+
+If the British parent was born abroad, they may be a British citizen ‘by descent’. This means they may not be allowed to pass on their British nationality to a child also born abroad. [Check if the parent is a British citizen by descent](/check-british-citizen).
 
 
-$!You must register the birth according to the regulations in Iran.$!
 
-You can’t currently register the birth with the UK authorities.
 
-The local birth certificate, with a [certified translation](/certifying-a-document), should be acceptable for all purposes in the UK. You can apply for registration at any time in the future - check [travel advice](/foreign-travel-advice) to find out if consular services have reopened in Iran.
+  * mother: Mother only
+  * father: Father only
+  * mother_and_father: Mother and father
+  * neither: Neither
+
+
+
 
 
 
