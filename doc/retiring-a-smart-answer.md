@@ -6,11 +6,29 @@ In this document is prescribed the steps that need to be taken:
 
 - ## Remove the identified smart answer:
 
-  Remove all data, YAML, test artefacts, templates and code that belong
-  to the identified smart answers. After this is done, it is very
-  necessary to run the unit, integration and regression tests. It is
-  important that you run these tests on local and in integration
-  environments. If these tests pass, then proceed to the next steps.
+  Remove the following files/directory where possible:
+    - Flow class files
+      - lib/smart_answer_flows/<smart-answer-name>.rb
+    - ERB templates directory
+      - lib/smart_answer_flows/<smart-answer-name>
+    - YAML files
+      - test/data/<smart-answer-name>-files.yml
+      - test/data/<smart-answer-name>-questions-and-responses.yml
+      - test/data/<smart-answer-name>-responses-and-expected-results.yml
+      - lib/data/rates/<smart-answer-name>.yml
+      - lib/data/<smart-answer-name>.yml
+    - Regression test artefacts directory
+      - test/artefacts/<smart-answer-name>
+    - Calculators, data query and other ruby files
+      - lib/smart_answer/calculators/<smart-answer-name>_calculator.rb
+      - lib/smart_answer/calculators/<smart-answer-name>_data_query.rb
+    - Customised start button
+      - lib/smart_answer/start_button.rb
+      NB: Check if the identified smart answer is listed in `custom_text_and_link` method. Remove if it exists. 
+
+  After this is done, it is very necessary to run the unit, integration and
+  regression tests. It is important that you run these tests on local and in
+  integration environments. If these tests pass, then proceed to the next steps.
 
 - ## Retire an identified smart answer:
 
